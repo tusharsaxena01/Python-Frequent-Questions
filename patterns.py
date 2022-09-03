@@ -1,6 +1,7 @@
 # diamond pattern
 '''
 for n = 5
+
     *
    ***
   *****
@@ -10,6 +11,7 @@ for n = 5
   *****
    ***
     *
+    
 '''
 def diamond(n):
     print()
