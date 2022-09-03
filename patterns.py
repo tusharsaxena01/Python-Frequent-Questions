@@ -22,10 +22,14 @@ def diamond(n):
 
 # box pattern
 '''
-for n = 3
-  ***
-  * *
-  ***
+for n = 5
+
+*****
+*   *
+*   *
+*   *
+*****
+
 '''
 def box(n):
     print()
