@@ -1,7 +1,40 @@
+#triangle
+'''
+for n = 5
+*
+**
+***
+****
+*****
+
+'''
+def triangle(n):
+    # first half
+    print("Ascending")
+    for i in range(n+1):
+        print('*'*i)
+    # reverse
+    print("\nDescending\n")
+    for i in range(n,0,-1):
+        print('*'*i)
+# pyramid
+'''
+
+for n = 5
+    *
+   ***
+  *****
+ *******
+*********
+
+'''
+def pyramid(n):
+    print()
+    for i in range(1,n+1):
+        print(' '*(n-i),'*'*i,'*'*(i-1),sep="")
 # diamond pattern
 '''
 for n = 5
-
     *
    ***
   *****
@@ -25,13 +58,11 @@ def diamond(n):
 # box pattern
 '''
 for n = 5
-
 *****
 *   *
 *   *
 *   *
 *****
-
 '''
 def box(n):
     print()
@@ -50,7 +81,6 @@ def box(n):
 # inverse diamond
 '''
 for n = 5
-
 **** ****
 ***   ***
 **     **
@@ -58,7 +88,6 @@ for n = 5
 **     **
 ***   ***
 **** ****
-
 '''
 def invdia(n):
     print()
@@ -70,12 +99,14 @@ def invdia(n):
             print('*' * ((i-n)+1), ' ' * (2*n-i-1), ' ' * ((2*n-1)-i-1), '*' * ((i-n)+1), sep="")
 
 
-# creating a menu for choosing which option to choose from
+
 if __name__ == '__main__':
     funcs = {
+        "Astericks Right Angled Triangle" : triangle,
+        "Astericks Pyramid" : pyramid,
         "Diamond Pattern" : diamond,
         "Box pattern":box,
-        "Reverse Diamond" : invdia
+        "Inverted Diamond" : invdia
         }
     for i,j in zip(funcs,range(len(funcs))):
         print(j,i)
